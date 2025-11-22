@@ -2,34 +2,34 @@
 
 const projects = [
   {
-    title: "Project One",
-    description: "A beautiful website built with HTML, CSS, and JavaScript",
+    title: "Matrix Operations Calculator",
+    description: "A calculator for solving Matrix Operations",
+    tags: ["Python"],
+    link: "#",
+  },
+  {
+    title: "Basic Slot Machine",
+    description: "Basic Slot machine made using python.",
+    tags: ["Python"],
+    link: "#",
+  },
+  {
+    title: "Void Warriors",
+    description: "A galaga based game",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "#",
   },
-  {
-    title: "Project Two",
-    description: "An interactive web app with Tailwind CSS styling",
-    tags: ["JavaScript", "Tailwind", "Web App"],
-    link: "#",
-  },
-  {
-    title: "Project Three",
-    description: "A responsive portfolio website for a client",
-    tags: ["HTML", "CSS", "Responsive"],
-    link: "#",
-    },
 
 
 ]
 
 // Function to display projects
 function displayProjects() {
-    const container = document.getElementById("projectsContainer")
-    projects.forEach((project) => {
-        const projectCard = document.createElement("div")
-        projectCard.className = "bg-stone-200 rounded-lg p-6 hover:bg-amber-100 transition"
-        projectCard.innerHTML = `
+  const container = document.getElementById("projectsContainer")
+  projects.forEach((project) => {
+    const projectCard = document.createElement("div")
+    projectCard.className = "bg-stone-200 rounded-lg p-6 hover:bg-amber-100 transition"
+    projectCard.innerHTML = `
             <h4 class="text-xl font-bold mb-2 text-stone-800">${project.title}</h4>
             <p class="text-stone-700 mb-4">${project.description}</p>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -37,8 +37,8 @@ function displayProjects() {
             </div>
             <a href="${project.link}" class="text-amber-700 hover:text-amber-800">View Project →</a>
         `
-        container.appendChild(projectCard)
-    })
+    container.appendChild(projectCard)
+  })
 }
 
 
